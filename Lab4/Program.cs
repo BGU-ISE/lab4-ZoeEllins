@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,11 +12,14 @@ namespace Lab4
     class Program
     {
         //Declare an instance for log4net
+        private static Hashtable hash = new Hashtable();
         private static readonly ILog Log =
               LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
         static void Main(string[] args)
         {
             ImplementLoggingFuntion();
+            hash.Add("ZoeEllins", "1234");
+            hash.Add("Shaked", "5678");
         }
         public static void correctPas ()
         {
