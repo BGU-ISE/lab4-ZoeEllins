@@ -18,7 +18,25 @@ namespace Lab4
         {
             ImplementLoggingFuntion();
         }
+        public static Boolean correctPas ()
+        {
+            String user = Console.ReadLine;
+            String password = Console.ReadLine;
+            int count = 0;
 
+            while ((user != "ZoeEllins" | password!= "1234")& count<3)
+            {
+                 user = Console.ReadLine;
+                 password = Console.ReadLine;
+                count++;
+            }
+
+            if (count == 3)
+                return false;
+
+            else
+                return true; 
+        }
         private static void ImplementLoggingFuntion()
         {
             /* We have 5 levels of log message. Let's test all.
