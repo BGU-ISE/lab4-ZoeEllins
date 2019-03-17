@@ -18,7 +18,7 @@ namespace Lab4
         {
             ImplementLoggingFuntion();
         }
-        public static Boolean correctPas ()
+        public static void correctPas ()
         {
             String user = Console.ReadLine;
             String password = Console.ReadLine;
@@ -32,10 +32,10 @@ namespace Lab4
             }
 
             if (count == 3)
-                return false;
+                Console.WriteLine("Wrong Password");
 
             else
-                return true; 
+                Console.WriteLine("Correct Password"); 
         }
         private static void ImplementLoggingFuntion()
         {
